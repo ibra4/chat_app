@@ -1,0 +1,196 @@
+/**
+silver: #dadfe1
+light-gray: #f1f0f0
+*/
+body {
+    font-size: 18px
+}
+.chat-message {
+    display: flex;
+}
+@media (min-width: 768px) {
+    .chat-message span {
+        max-width: 70%
+    }
+    .user-email {
+        width: 70%
+    }
+}
+@media (max-width: 767px) {
+    .chat-section {
+        margin-top: 30px
+    }
+}
+.from_him {
+    justify-content: flex-start;
+}
+.from_him > span {
+    background-color: #f1f0f0;
+    color: black
+}
+.from_me > span {
+    background-color: #007bff;
+    color: white
+}
+.from_me {
+    justify-content: flex-end;
+}
+.from_me .download-text {
+    color: white
+}
+.from_him .download-text {
+    color: black
+}
+.chat-message span {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+.media-container {
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 200px
+}
+.media-container.doc {
+    overflow: visible;
+    text-align: center;
+    min-width: 100px
+}
+
+.icon-image-container {
+    height: 50px;
+    width: 50px;
+}
+.chat-container {
+    min-height: 200px;
+    max-height: 400px;
+    overflow-x: auto;
+}
+.loader-container {
+    min-height: 400px
+}
+.user-item {
+    /* border-bottom: 1px solid #6c7a89; */
+    cursor: pointer
+}
+img, video {
+    width: 100%
+}
+.user-item-image {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    border: 1px solid #6c7a89;
+    overflow: hidden;
+}
+.user-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #6c7a89;
+    overflow: hidden;
+}
+
+.user-item-image .fit-image,
+.user-image .fit-image{
+    object-fit: none;
+    object-position: center;
+}
+.user-item.active > div:not(.bluedot) {
+    background-color: #dee2e6 !important;
+    padding: 10px;
+    border-radius: 20px;
+}
+.bg-white {
+    background-color: white
+}
+.h-100 {
+    height: 100%
+}
+.message-textarea {
+    resize: none;
+    overflow: hidden;
+    border-radius: 20px
+}
+.chat-header {
+    border-bottom: 1px solid #dadfe1;
+}
+.border-right {
+    border-width: 2px !important
+}
+.border-bottom {
+    border-width: 2px !important
+}
+
+.file-container {
+    position: relative
+}
+.file-container svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #007bff
+}
+.file-container input {
+    opacity: 0;
+    width: 36px;
+    height: 36px;
+}
+
+.users-container {
+    max-height: 600px;
+    overflow: auto
+}
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: #dee2e6
+}
+.user-email {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bluedot {
+    background-color: #007bff;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%
+}
+.download-text {
+    font-size: 14px
+}
+.color-white {
+    color: white
+}
+
+/* Scrollbar Style */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 4px;
+  }
